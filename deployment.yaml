@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: bhanuteja822/kubernetes-app:latest
+        image: nithu99/regapp:latest
         ports:
         - containerPort: 80
