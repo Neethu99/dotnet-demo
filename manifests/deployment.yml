@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: neethudotnetdemo 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: neethudotnetdemo
+  template:
+    metadata:
+      labels:
+        app: neethudotnetdemo 
+    spec:
+      containers:
+        - name: neethudotnetdemo 
+          image: bhanu.azurecr.io/neethudotnetdemo
+          ports:
+          - containerPort: 8080
